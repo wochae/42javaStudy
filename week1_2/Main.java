@@ -1,7 +1,6 @@
 package week1_2;
 
-import week1_2.domain.MyDate;
-import week1_2.domain.Studnet;
+import week1_2.thisusage.Animal;
 
 public class Main {
     public static void main(String args[])
@@ -17,7 +16,14 @@ public class Main {
         //date1.day = 10; //에러 'day' has private
 
         // 참조 자료형 변수
-/*
+
+        Animal cat = new Animal("cat");
+        System.out.println("cat.getMyReference() = " + cat.getMyReference());
+        System.out.println("cat.getMyReference().getType() = " + cat.getMyReference().getType());
+        System.out.println("cat.getMyReference().type = " + cat.getMyReference().type);
+        System.out.println("cat = " + cat);
+        System.out.println("cat.getType() = " + cat.getType());
+        /*
         Studnet studentLee = new Studnet(1001, "Lee");
 
         studentLee.setKorean("국어", 100);
